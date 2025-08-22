@@ -7,6 +7,8 @@ public class Check_palindrome {
         int input = sc.nextInt();
         int n = input;
         int rev = 0;
+
+        // T.C - O(log10N+1), S.C - O(1)
         while(n>0){
             int r = n%10;
             rev = r + rev*10;
