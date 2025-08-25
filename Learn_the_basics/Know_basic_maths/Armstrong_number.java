@@ -8,12 +8,13 @@ public class Armstrong_number {
         // T.C - O(log10N + 1), S.C - O(1)
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        int len = String.valueOf(n).length();
         int a = n;
         int arm = 0;
-        while(n!=0){
+        while(len>0){
             int r = n%10;
             // System.out.println(r);
-            arm = (int)Math.pow(r, 3) + arm;
+            arm = (int)Math.pow(r, len) + arm;
             n = n/10;
             // System.out.println(n);
         }
