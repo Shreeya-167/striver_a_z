@@ -37,5 +37,7 @@ public class Reverse_a_number {
 
         System.out.println(s);
 
+        sc.close();
+
     }
 }

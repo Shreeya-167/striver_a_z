@@ -44,6 +44,7 @@ public class Prime_or_not {
             System.out.println("Not Prime");
         }
 
+        sc.close();
 
 }
 

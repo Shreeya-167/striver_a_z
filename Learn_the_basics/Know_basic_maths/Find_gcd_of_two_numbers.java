@@ -48,6 +48,8 @@ public class Find_gcd_of_two_numbers {
 
         System.out.println(gcd3);
 
+        sc.close();
+
     }
 }
 
