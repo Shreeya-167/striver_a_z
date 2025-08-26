@@ -13,7 +13,14 @@ public class Sum_of_first_n_numbers {
     }
 
     public static void findSumParameterized(int n, int sum){
+        if(n<1) {
+            System.out.println(sum);
+            return;
+        }
+        sum = sum + n;
+        findSumParameterized(n-1, sum);
         
+
     }
 
     public static void main(String[] args) {
@@ -22,6 +29,7 @@ public class Sum_of_first_n_numbers {
         // int i = 0;
         int sum = 0;
 
+        findSumParameterized(n, sum);
         System.out.println(findSum(n, sum));
     }
     
