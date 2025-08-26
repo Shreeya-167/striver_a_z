@@ -11,6 +11,11 @@ public class Factorial {
         return findFact(--n, fact);
     }
 
+    public static int findFact(int n){
+        if(n<1) return 1;
+        return n*findFact(n-1);
+    }
+
     public static void findFactParameterized(int n, int fact){  //Parameterized
         if(n<1){
             System.out.println(fact);
@@ -26,6 +31,7 @@ public class Factorial {
 
         System.out.println(findFact(n, fact));
         findFactParameterized(n, fact);
+        System.out.println(findFact(n));
 
     }
 }
